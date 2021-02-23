@@ -74,7 +74,7 @@
                     list_ele.empty();
                     for (let item of list) {
                         let item_ele = $(`<div class="item">${item}</div>`);
-                        item_ele.click(
+                        item_ele.mousedown(
                             () => { $('#local-input').val(item); list_ele.hide();  }
                         );
                         list_ele.append(item_ele);
